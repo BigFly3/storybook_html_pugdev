@@ -1,0 +1,11 @@
+mixin LinkButton(params={})
+  - const props = Object.assign({ url: '' ,full:false}, params)
+
+  - let className = attributes.class !== undefined ? attributes.class : ''
+  - if(props.size) className += ' LinkButton--' + props.size
+  - if(props.full) className += ' LinkButton--full'
+  - if(props.color) className += ' LinkButton--' + props.color
+  - if(props.isBlank) Object.assign( attributes , {'target':'_blank'})
+  - const attrs = Object.assign( attributes , {class:className})
+  a.LinkButton(href=props.url)&attributes(attrs)
+    block

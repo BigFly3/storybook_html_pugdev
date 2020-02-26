@@ -1,0 +1,6 @@
+mixin Button(params={})
+  - const props = Object.assign({ type: 'button'}, params)
+  button.Button(type=props.type)&attributes(attributes)
+    span.Button__label
+      block
+

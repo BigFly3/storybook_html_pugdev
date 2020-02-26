@@ -1,0 +1,52 @@
+{
+  "name": "storybook_html_pugdev",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -c .storybook/default -s static",
+    "build": "build-storybook -c .storybook/default -s static -o public",
+    "build2": "build-storybook -c .storybook/second -s static -o docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigFly3/storybook_html_sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BigFly3/storybook_html_sample/issues"
+  },
+  "homepage": "https://github.com/BigFly3/storybook_html_sample#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-knobs": "^5.3.12",
+    "@storybook/addon-viewport": "^5.3.12",
+    "@storybook/components": "^5.3.12",
+    "@storybook/html": "^5.3.12",
+    "@whitespace/storybook-addon-html": "^1.2.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "fibers": "^4.0.2",
+    "import-glob-loader": "^1.1.0",
+    "jquery": "^3.4.1",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "pug-runtime": "^2.0.5",
+    "react": "^16.12.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "stimulus": "^1.1.1",
+    "storypug": "^1.0.0-rc.8",
+    "style-loader": "^1.1.3",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  }
+}

@@ -1,0 +1,9 @@
+.Media {
+  display: flex;
+  &__image {
+    flex: 0 0 auto;
+  }
+  &.-reverse {
+    flex-direction: row-reverse;
+  }
+}

@@ -1,0 +1,25 @@
+include LinkButton
+p
+  +LinkButton({
+  })
+    | Normal
+p
+  +LinkButton({
+    size:'small',
+    color:'green',
+    href:"http://google.com",
+    isBlank:true,
+  })
+    | Small Green
+p
+  +LinkButton({
+    size:'large',
+    color:'gray',
+  })
+    | Large Gray
+p
+  +LinkButton({
+    size:'small',
+    full:true,
+  })(class="addClass" data-attr="addAttr")
+    | FullWidth Small + Add Attributes

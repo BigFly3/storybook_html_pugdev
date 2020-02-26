@@ -1,0 +1,6 @@
+mixin Media(params={})
+  - const props = Object.assign({ image: '', reverse: false }, params)
+  .Media(type=props.type, class={ '-reverse': props.reverse })&attributes(attributes)
+    img.Media__image(src=props.image)
+    .Media__body
+      block

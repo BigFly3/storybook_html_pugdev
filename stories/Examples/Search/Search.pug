@@ -1,0 +1,14 @@
+//- load children Examples
+include ../Button/Button
+
+mixin Search(props={})
+  form.Search(
+    action="/search"
+    role="search"
+    data-controller="search"
+    data-action="search#send"
+  )
+    label.Search__field
+      span.Search__label Keywords
+      input.Search__input(type="search" name="keywords" data-target="search.keywords")
+    +Button({ type: 'submit' }) Search
