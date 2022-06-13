@@ -3,7 +3,7 @@ import { AddonPanel } from '@storybook/components';
 import { useParameter } from "@storybook/api";
 import { addons, types } from '@storybook/addons';
 
-import SyntaxHighlighter from '@whitespace/storybook-addon-html/lib/SyntaxHighlighter';
+import SyntaxHighlighter from '@whitespace/storybook-addon-html/out/SyntaxHighlighter';
 import style from 'react-syntax-highlighter/dist/esm/styles/hljs/github-gist';
 
 export const PugCode = () => {
