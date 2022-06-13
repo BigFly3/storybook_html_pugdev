@@ -8,6 +8,7 @@ module.exports = {
     '@whitespace/storybook-addon-html/register',
     '@storybook/addon-viewport/register',
     '@storybook/addon-knobs/register',
+    '@storybook/addon-postcss',
     'storypug'
   ],
   webpackFinal: (config) => {
