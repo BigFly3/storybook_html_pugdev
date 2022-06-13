@@ -12,12 +12,14 @@ export const PugCode = () => {
   if (file === '') {
     return null;
   }
+
   let pug
+
   try {
-    pug = require(`!html-loader!../../stories/${file}`);;
+    pug = require(`!!raw-loader!../../stories/${file}`);
   } catch (e) {
     if (e.code !== 'MODULE_NOT_FOUND') {
-        throw e;
+      throw e;
     }
   }
 
@@ -30,7 +32,7 @@ export const PugCode = () => {
         padded={true}
         style={style}
       >
-        {pug}
+        {pug.default}
       </SyntaxHighlighter>
       ) : null}
     </Fragment>
