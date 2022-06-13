@@ -32,7 +32,6 @@
     "@whitespace/storybook-addon-html": "^5.0.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
-    "fibers": "^4.0.2",
     "import-glob-loader": "^1.1.0",
     "jquery": "^3.4.1",
     "pug": "^2.0.4",
