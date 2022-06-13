@@ -10,14 +10,8 @@ export default {
 
 // default
 export const Default = () => html(Button, {}, 'Label')
-Default.story = {
-  parameters:{pugCode:'Examples/Button/type_button.pug'}
-
-}
+Default.parameters = { pugCode: 'Examples/Button/type_button.pug' };
 
 // type=submit
 export const Submit = () => html(Button, { type: 'submit' }, 'Send')
-Submit.story = {
-  parameters:{pugCode:'Examples/Button/type_submit.pug'}
-
-}
+Submit.parameters = { pugCode: 'Examples/Button/type_submit.pug' };

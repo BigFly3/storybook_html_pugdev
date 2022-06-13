@@ -22,6 +22,4 @@ export const Default = () => {
   // return the application wrapper element
   return wrapper.el
 }
-Default.story = {
-  parameters:{pugCode:'Examples/Search/Search.pug'}
-}
+Default.parameters = { pugCode: 'Examples/Search/Search.pug' };

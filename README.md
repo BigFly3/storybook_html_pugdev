@@ -45,9 +45,7 @@ Please refer to the following link and [demo](https://bigfly3.github.io/storyboo
 ```javascript
   //csf
   export const Default = () => {/../}
-  Default.story = {
-    parameters:{pugCode:'Examples/Media/Media.pug'}
-  }
+  Default.parameters = { pugCode: 'Examples/Media/Media.pug' }
 
   //storiesOf
   storiesOf('Examples/Media',modules)
