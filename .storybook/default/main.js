@@ -11,6 +11,10 @@ module.exports = {
     '@storybook/addon-postcss',
     'storypug'
   ],
+  stories: [
+    '../../stories/**/*.stories.pug',
+    '../../stories/**/*.stories.js'
+  ],
   webpackFinal: (config) => {
     baseConf.resolve.alias["@conf"] = path.resolve(__dirname, './')
     return merge(config,baseConf);

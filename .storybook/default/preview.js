@@ -39,7 +39,3 @@ pugContext.keys().forEach(function(pathStr) {
     })
 });
 
-configure([
-  pugContext,
-  require.context('@stories', true, /\.stories\.js$/)
-], module);
