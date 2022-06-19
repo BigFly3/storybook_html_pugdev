@@ -34,6 +34,4 @@ html(
   },
   'button text',
 )
-Knobs.story = {
-  parameters:{pugCode:'Examples/LinkButton/LinkButton.pug'}
-}
+Knobs.parameters = { pugCode: 'Examples/LinkButton/LinkButton.pug' };

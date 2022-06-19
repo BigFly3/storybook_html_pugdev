@@ -24,6 +24,4 @@ export const Knobs = () =>
     },
     '<p>Contents...</p>',
   )
-Knobs.story = {
-  parameters:{pugCode:'Examples/Media/Media.pug'}
-}
+Knobs.parameters = { pugCode: 'Examples/Media/Media.pug' };

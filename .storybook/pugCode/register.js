@@ -3,7 +3,7 @@ import { AddonPanel } from '@storybook/components';
 import { useParameter } from "@storybook/api";
 import { addons, types } from '@storybook/addons';
 
-import SyntaxHighlighter from '@whitespace/storybook-addon-html/lib/SyntaxHighlighter';
+import SyntaxHighlighter from '@whitespace/storybook-addon-html/out/SyntaxHighlighter';
 import style from 'react-syntax-highlighter/dist/esm/styles/hljs/github-gist';
 
 export const PugCode = () => {
@@ -12,12 +12,14 @@ export const PugCode = () => {
   if (file === '') {
     return null;
   }
+
   let pug
+
   try {
-    pug = require(`!html-loader!../../stories/${file}`);;
+    pug = require(`!!raw-loader!../../stories/${file}`);
   } catch (e) {
     if (e.code !== 'MODULE_NOT_FOUND') {
-        throw e;
+      throw e;
     }
   }
 
@@ -30,7 +32,7 @@ export const PugCode = () => {
         padded={true}
         style={style}
       >
-        {pug}
+        {pug.default}
       </SyntaxHighlighter>
       ) : null}
     </Fragment>

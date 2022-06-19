@@ -25,13 +25,13 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "@storybook/addon-knobs": "^5.3.12",
-    "@storybook/addon-viewport": "^5.3.12",
-    "@storybook/components": "^5.3.12",
-    "@storybook/html": "^5.3.12",
-    "@whitespace/storybook-addon-html": "^1.2.1",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-viewport": "^6.5.8",
+    "@storybook/components": "^6.5.8",
+    "@storybook/html": "^6.5.8",
+    "@whitespace/storybook-addon-html": "^5.0.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
-    "fibers": "^4.0.2",
     "import-glob-loader": "^1.1.0",
     "jquery": "^3.4.1",
     "pug": "^2.0.4",
@@ -48,5 +48,8 @@
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"
+  },
+  "volta": {
+    "node": "15.14.0"
   }
 }
