@@ -1,9 +1,9 @@
 {
   "name": "storybook_html_pugdev",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "scripts": {
-    "storybook": "start-storybook -p 6006 -c .storybook/default -s static",
+    "storybook": "start-storybook -p 6006 -c .storybook/default -s static --no-manager-cache",
     "build": "build-storybook -c .storybook/default -s static -o public",
     "build2": "build-storybook -c .storybook/second -s static -o docs"
   },

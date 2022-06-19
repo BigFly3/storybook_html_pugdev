@@ -6,9 +6,14 @@ module.exports = {
   addons: [
     path.resolve(__dirname, '../pugCode'),
     '@whitespace/storybook-addon-html/register',
-    '@storybook/addon-viewport/register',
-    '@storybook/addon-knobs/register',
+    '@storybook/addon-viewport',
+    '@storybook/addon-knobs',
+    '@storybook/addon-postcss',
     'storypug'
+  ],
+  stories: [
+    '../../stories/**/*.stories.pug',
+    '../../stories/**/*.stories.js'
   ],
   webpackFinal: (config) => {
     baseConf.resolve.alias["@conf"] = path.resolve(__dirname, './')
